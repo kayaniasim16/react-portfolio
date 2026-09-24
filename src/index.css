@@ -1,0 +1,308 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  color: #222;
+}
+
+nav {
+  background-color: #1f2937;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav h2 {
+  margin: 0;
+  font-size: 28px;
+}
+
+nav div {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 30px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 30px;
+}
+
+p {
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+button {
+  background-color: #1f2937;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #374151;
+}
+
+.home-page {
+  text-align: center;
+}
+
+.hero {
+  padding: 70px 20px;
+}
+
+.intro {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.hero h1 {
+  font-size: 56px;
+  margin: 10px 0;
+}
+
+.hero h2 {
+  font-size: 26px;
+  margin: 10px 0 20px;
+}
+
+.hero-text {
+  max-width: 650px;
+  margin: 0 auto 30px;
+}
+
+.mission {
+  background-color: white;
+  padding: 35px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.about-page {
+  text-align: center;
+}
+
+.about-card {
+  background-color: white;
+  padding: 50px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.about-card p {
+  max-width: 650px;
+  margin: 20px auto;
+}
+
+.resume-button {
+  display: inline-block;
+  background-color: #1f2937;
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  margin-top: 10px;
+}
+
+.resume-button:hover {
+  background-color: #374151;
+}
+
+.projects-page {
+  text-align: center;
+}
+
+.projects-intro {
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.project-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.project-card h2 {
+  margin-top: 0;
+}
+
+.project-card h3 {
+  margin-top: 25px;
+  margin-bottom: 8px;
+}
+
+.project-card p {
+  margin-top: 0;
+}
+
+@media (max-width: 800px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.education-page {
+  text-align: center;
+}
+
+.education-intro {
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.education-card {
+  background-color: white;
+  max-width: 800px;
+  margin: 0 auto 25px;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.education-card h2 {
+  margin-top: 0;
+}
+
+.education-card p {
+  margin-bottom: 10px;
+}
+
+.services-page {
+  text-align: center;
+}
+
+.services-intro {
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.service-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.service-card h2 {
+  margin-top: 0;
+}
+
+.service-card p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 800px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contact-page {
+  text-align: center;
+}
+
+.contact-intro {
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-info,
+.contact-form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.contact-info h2,
+.contact-form h2 {
+  margin-top: 0;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
