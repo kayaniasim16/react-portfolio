@@ -2,12 +2,12 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Projects from "./pages/Projects";
-import Education from "./pages/Education";
-import Services from "./pages/Services";
-import Contact from "./pages/Contact";
+import Home from "./pages/home";
+import About from "./pages/about";
+import Projects from "./pages/projects";
+import Education from "./pages/education";
+import Services from "./pages/services";
+import Contact from "./pages/contact";
 
 import "./App.css";
 
