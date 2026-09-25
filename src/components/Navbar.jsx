@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <nav>
+      {/* Main navigation menu for all portfolio pages */}
       <h2>AK</h2>
 
       <div>

@@ -12,6 +12,7 @@ function Contact() {
     message: "",
   });
 
+  // Updates the form data when the user enters information
   function handleChange(event) {
     const { name, value } = event.target;
 
@@ -21,18 +22,16 @@ function Contact() {
     });
   }
 
+  // Captures the form and redirects the user to the Home page
   function handleSubmit(event) {
     event.preventDefault();
-
     console.log(formData);
-
     navigate("/");
   }
 
   return (
     <main className="contact-page">
       <h1>Contact Me</h1>
-
       <p className="contact-intro">
         If you would like to get in touch with me, you can use the information
         below or send me a message.
@@ -41,18 +40,9 @@ function Contact() {
       <section className="contact-container">
         <div className="contact-info">
           <h2>Contact Information</h2>
-
-          <p>
-            <strong>Name:</strong> Asim Kayani
-          </p>
-
-          <p>
-            <strong>Email:</strong> Your Email Here
-          </p>
-
-          <p>
-            <strong>Phone:</strong> Your Phone Number Here
-          </p>
+          <p><strong>Name:</strong> Asim Kayani</p>
+          <p><strong>Email:</strong> Your Email Here</p>
+          <p><strong>Phone:</strong> Your Phone Number Here</p>
         </div>
 
         <div className="contact-form">
